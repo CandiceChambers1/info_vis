@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text Input and Output</title>
+</head>
+<body>
+<h1>The Long Goodnight</h1>
+<h3><u>Chapter 1: The City and the Silence</u></h3>
+<p>Detective Hardcastle shuddered when he heard the knock at his door. Midnight on a Saturday, and somebody was looking for a gumshoe? It smelled like trouble, because if he had learned one thing in his time as a private eye, it was that all the city's ghosts came out at night.</p>
+<input type="text" id="textInput">
+<button onclick="outputText()">Submit</button>
+
+<div id="output"></div>
+
+<script>
+function outputText() {
+  // Get the input value
+  var inputText = document.getElementById("textInput").value;
+
+  // Display the input value
+  document.getElementById("output").innerText = inputText;
+}
+</script>
+
+</body>
+</html>
