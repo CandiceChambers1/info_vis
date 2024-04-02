@@ -1,3 +1,4 @@
+import flair
 from flair.data import Sentence
 from flair.models import SequenceTagger
 
@@ -18,3 +19,4 @@ print('The following NER tags are found:')
 # iterate over entities and print
 for entity in sentence.get_spans('np'):
     print(entity)
+
