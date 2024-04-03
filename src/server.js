@@ -21,7 +21,7 @@ app.post('/process', (req, res) => {
     // Capture stdout data from Python process
     pythonProcess.stdout.on('data', (data) => {
         outputData += data.toString();
-        outputData += '\n\n';
+        outputData += '\n\n\n';
 
     });
     console.log(outputData)
